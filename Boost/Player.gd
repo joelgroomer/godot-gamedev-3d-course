@@ -7,5 +7,6 @@ func _process(delta: float) -> void:
 		
 	if Input.is_action_pressed("ui_left"):
 		rotate_z(delta)
+		
 	if Input.is_action_pressed("ui_right"):
 		rotate_z(-delta)
