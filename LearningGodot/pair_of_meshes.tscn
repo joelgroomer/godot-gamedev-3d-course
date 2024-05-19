@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dg8w3n4o4okwu"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_lbmy2"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_xypxm"]
+
+[node name="PairOfMeshes" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.72665, 0, -0.0532489)
+
+[node name="CubeMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.44686, 0.0568277, 1.37963, -1.35504, 0.442629, 1.40284, -0.265472, -1.94958, 0.358712, 0.630167, 0.432115, 0)
+mesh = SubResource("BoxMesh_lbmy2")
+
+[node name="CapsuleMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.757166, -0.380748, 0.530784, 0.182483, -0.656921, -0.731543, 0.627216, 0.650758, -0.427918, 4.74981, 0, 0)
+mesh = SubResource("CapsuleMesh_xypxm")
